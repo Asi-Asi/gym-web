@@ -1,0 +1,137 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-basic);
+}
+nav{
+    background-color: #252524de;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+     width: 100%;
+     display: flex;
+     font-weight: bolder;
+     justify-content: flex-end;
+     align-items: center;
+}
+nav li {
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding:  0 30px !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:var(--clr-secondary); 
+}
+
+nav a:hover{
+    border-radius: 120px;
+    background-color:var(--clr-gray);
+    color: var(--clr-secondary);
+}
+
+nav li:first-child{
+    margin-right:auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999 !important;
+    background-color: #474645de;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 10px 10px rgba(0,0,0,0.5);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#close-btn{
+    filter: invert(1);
+    margin-left:60%
+}
+#menu-btn{
+    filter: invert(1);
+    display: none;
+}
+#menu-btn:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+#close-btn:hover{
+    cursor: pointer;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+#main_img{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+.main_section{
+    display: flex;
+    height: 60vh;
+    padding:  100px 200px;
+    background-image: url(./assets/images/main_image_main_page.jpg);
+    background-repeat: no-repeat;
+    background-position:0 ;
+    background-size: cover;
+}
+.main_section div{
+    color: var(--clr-secondary);
+    font-size: 2em;
+    width: 100%;
+    display:block;
+    width: fit-content;
+    height: fit-content;
+    font-weight:bolder ;
+    padding: 50px 20px 50px 20px;
+    margin-top: 40vh;
+    margin-left:  -18%;
+    text-shadow:  grey 5px -4px 4px;
+    box-shadow:  gray -15px 20px 20px ;
+}
+
+div h2 span{
+
+    font-size: var(--seconadry_header_font);
+}
+
+.AboutUs_section{
+    color: var(--clr-font);
+    text-shadow:  grey 5px -4px 4px;
+    font-size: 1.5em;
+    padding: 20vh 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+#aboutUs_paragraph{
+    font-size: 0.80em !important;
+    line-height: 1.2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

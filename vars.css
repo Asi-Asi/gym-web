@@ -1,0 +1,14 @@
+:root{
+    /* colors */
+     --clr-basic:#081014;
+     --clr-primary:#183D3D;
+     --clr-secondary:#98c200;
+     --clr-gray:#6e6e6e;
+     --clr-font:#fff;
+
+
+     /* sizes */
+     --normal_font:0.75em;
+     --main_header_font:2em;
+     --seconadryHeader_font:1em;
+}

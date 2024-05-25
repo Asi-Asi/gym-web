@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navHeader">
+                <li class="tapOrMobile" id="logo" href=""><a href="">Logo</a></li>
+                <li class="tapOrMobile"><a href=""><span>Home</span></a></li>
+                <li class="tapOrMobile"><a href=""><span>Our story</span></a></li>
+                <li class="tapOrMobile"><a href=""><span>User</span></a></li>
+                <li class="tapOrMobile" onclick=showSidebar() id="menu-btn" href="" ><a><img src="../assets/icons/menu2_icon.svg" alt="" width="40px"></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() id="close-btn" href=""><a><img src="../assets/icons/close_icon (1).svg" alt="" width="45px"></a></li>
+                <li><a href=""><span>Home</span></a></li>
+                <li><a href=""><span>Our story</span></a></li>
+                <li><a href="">User</a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </header>
+    
+    <section class="main_section">
+        <div>
+            <h2>Embrace a healthy lifestyle<br><br><br></h2>
+            <h2><span>&nbsp &nbsp Unlock your true potential!</span></h2>
+            
+        </div>
+    </section>
+
+    <section class="AboutUs_section">
+        <h3><b><i>About Us</i></b></h3>
+        <p id="aboutUs_paragraph" ><br><br>Welcome to our health and fitness hub, your ultimate destination for unlocking a vibrant life! 
+            We're here to empower you with personalized tips and dynamic exercises that will keep your mind
+            and body in top shape. Dive into our curated lifestyle tips and energizing workout plans
+            designed to help you live your healthiest, happiest life. Let's embark on this journey together
+            towards a stronger, more balanced you!
+        </p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@import url(./reset.css);
+@import url(./vars.css);
+@import url(./main_D_T.css);
+
+
+@media (max-width: 600px){
+    .tapOrMobile{
+        display: none;
+    }
+    #menu-btn{
+        display: flex;
+    }
+    #logo{
+        display: flex;
+    }
+    .main_section div{
+        margin-left: -120px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 350px){
+    .sidebar{
+        width: 100%;
+    }
+    #close-btn{
+        margin-left:43%;
+        position: sticky;
+    }
+    .sidebar a{
+        justify-content: center;
+        align-items: center;
+        margin-left: -10%;
+    }
+    .tapOrMobile{
+        display: none;
+    }
+    #menu-btn{
+        display: flex;
+    }
+    #logo{
+        display: flex;
+    }
+    .first_section h1{
+        width: 50%;
+        font-size: 1.5em;
+    }
+
+    .main_section{
+        background-position:30% 50%;
+    }
+}
+@media (max-width: 755px){
+    .main_section{
+        /* width:70%; */
+    }
+    .AboutUs_section{
+    }
+
+}
+@media (max-width: 900px){
+    .main_section{
+        margin-left: -60px !important;
+    }
+}
+@media (max-width: 1046px){
+    .main_section div h2{
+        font-size: calc(100%/1.5);
+    }
+    .main_section{
+        margin-left: -40px;
+    }
+}
